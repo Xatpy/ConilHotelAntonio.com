@@ -606,7 +606,7 @@ a:after {
    vertical-align: middle;
    min-width:300px;
    padding:5px;
-   width:480px;
+   /*width:480px;*/
 
    display: inline-block;
    text-align: center;
@@ -746,7 +746,7 @@ html, body, #map_canvas {
 
 @media screen and (max-width:769px) {
 	#headerwrap h1 {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	#headerwrap p {
 		font-size: 30px;
