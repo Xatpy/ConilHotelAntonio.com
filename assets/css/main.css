@@ -732,6 +732,16 @@ html, body, #map_canvas {
     width: 100%;
 }
 
+#titleBig {
+  font-family: "fontTitleBig";
+}
+
+@font-face {
+  font-family: "fontTitleBig";
+  src: url("./assets/fonts/Nirepnirun.ttf") !important;
+  font-weight: bold;
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
