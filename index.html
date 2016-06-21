@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hotel Antonio</title>
+    <title>Hotel Antonio - Conil de la Frontera</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
@@ -35,7 +35,6 @@
     <META NAME="author" CONTENT="http://www.mediaestudio.com">
     <META NAME="publisher" CONTENT="http://www.hotel-antonio.com">
     <META NAME="copyright" CONTENT="Mediaestudio S.L.">
-
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,8 +76,10 @@
             <li><a href="#home" class="smoothScroll">Inicio</a></li>
 			<li> <a href="#about" class="smoothScroll"> Habitaciones</a></li>
 			<li> <a href="#services" class="smoothScroll"> Restaurante</a></li>
+            <li> <a href="#serviciosHotel" class="smoothScroll"> Servicios</a></li>
 			<li> <a href="#team" class="smoothScroll"> Entorno</a></li>
 			<li> <a href="#portfolio" class="smoothScroll"> Contacto</a></li>
+            <li> <a href="#reservas" class="smoothScroll"> Reservas</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Localización</a></li>
         </div><!--/.nav-collapse -->
       </div>
@@ -89,7 +90,7 @@
     <div id="headerwrap" id="home" name="home">
 		<header class="clearfix">
 				<h1 id="titleBig" style="letter-spacing: 0.5px;">HOTEL ANTONIO</h1>
-                <p>Conil de la Frontera</p>  		 		
+                <p id="subtitle"><b>Conil de la Frontera</b></p>  		 		
   		</header>	    
     </div>
     <div class="container">
@@ -105,14 +106,17 @@
     </div>    
     <!-- /headerwrap -->
 
-    <div class="container" name="fotosInicio">
+    <div class="container" name="fotosInicio" style="padding-top: 17px">
         <section id="miSlideHotel" class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#miSlideHotel" data-slide-to="0" class="active"></li>
                 <li data-target="#miSlideHotel" data-slide-to="1" ></li>
                 <li data-target="#miSlideHotel" data-slide-to="2" ></li>
                 <li data-target="#miSlideHotel" data-slide-to="3" ></li>
-                <li data-target="#miSlideHotel" data-slide-to="4" ></li>           
+                <li data-target="#miSlideHotel" data-slide-to="4" ></li>   
+                <li data-target="#miSlideHotel" data-slide-to="5" ></li>
+                <li data-target="#miSlideHotel" data-slide-to="6" ></li>
+                <li data-target="#miSlideHotel" data-slide-to="7" ></li>           
             </ol>
 
             <div class="carousel-inner">
@@ -136,6 +140,19 @@
                     <!--<img class="adaptar" id="foto_hotel_5">-->
                     <img class="adaptar" src="assets/photos/Hotel/hotel_5_PC.jpg">
                 </div>
+
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Hotel/h1_res.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Hotel/h2_res.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Hotel/h3_res.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Hotel/h4_res.jpg">
+                </div>
             </div>
             <a href="#miSlideHotel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a href="#miSlideHotel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -145,14 +162,14 @@
     <!-- ==================================== HABITACIONES ==================================== -->
 	<section class="section-divider textdivider divider1" id="about">
 		<div class="container">
-			<h1>Las habitaciones</h1>
+			<h1 id="titleSeparadores">Las habitaciones</h1>
 			<hr>
 		</div><!-- container -->
 	</section><!-- section -->
    	
 	<div class="container" name="about">
 		<div class="row white">			
-			<div class="col-lg-offset-1 col-lg-5">
+			<div class="col-lg-offset-4 col-lg-8">
 				<p>Todas las habitaciones disponen de:<br>
             	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Baño completo<br>
         	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Calefacción<br>
@@ -163,19 +180,6 @@
                 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Baños completos con secador de pelo<br>
                 </p>
 			</div>
-			<div class="col-lg-5">
-				<p>Todo con un buen servicio y ambiente familiar, donde encontrarán también:<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cafetería<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Restaurante<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Prensa y revistas<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Supermercado<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Lavandería<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Se aceptan mascotas (bajo peticion previa)<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Parking gratuito propio<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Peluquería propia<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cajero automático<br>
-				</p>
-			</div><!-- col-lg-6 -->
 		</div><!-- row white -->
 
         <section id="miSlideHabitaciones" class="carousel slide">
@@ -184,25 +188,60 @@
                 <li data-target="#miSlideHabitaciones" data-slide-to="1" ></li>
                 <li data-target="#miSlideHabitaciones" data-slide-to="2" ></li>
                 <li data-target="#miSlideHabitaciones" data-slide-to="3" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="4" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="5" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="6" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="7" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="8" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="9" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="10" ></li>
+                <li data-target="#miSlideHabitaciones" data-slide-to="11" ></li>
             </ol>
 
             <div class="carousel-inner">
                 <div class="item active">
                     <!--<img class="adaptar" id="foto_habitaciones_1">-->
-                    <img class="adaptar" src="assets/photos/Habitaciones/habitaciones_1_PC.jpg">
+                    <img class="adaptar" src="assets/photos/Habitaciones/a.jpg">
                 </div>
                 <div class="item">
                     <!--<img class="adaptar" id="foto_habitaciones_2">-->
-                    <img class="adaptar" src="assets/photos/Habitaciones/habitaciones_2_PC.jpg">
+                    <img class="adaptar" src="assets/photos/Habitaciones/b.jpg">
                 </div>
                 <div class="item">
                     <!--<img class="adaptar" id="foto_habitaciones_3">-->
-                    <img class="adaptar" src="assets/photos/Habitaciones/habitaciones_3_PC.jpg">
+                    <img class="adaptar" src="assets/photos/Habitaciones/c.jpg">
                 </div>
                 <div class="item">
                     <!--<img class="adaptar" id="foto_habitaciones_4">-->
-                    <img class="adaptar" src="assets/photos/Habitaciones/habitaciones_4_PC.jpg">
+                    <img class="adaptar" src="assets/photos/Habitaciones/d.jpg">
                 </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/e.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/f.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/g.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/h.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/i.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/j.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/k.jpg">
+                </div>
+                <div class="item">
+                    <img class="adaptar" src="assets/photos/Habitaciones/l.jpg">
+                </div>
+                <!--<div class="item">
+                    <img class="adaptar" src="assets/photos/peluqueria.jpg">
+                </div>-->
             </div>
             <a href="#miSlideHabitaciones" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a href="#miSlideHabitaciones" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -214,7 +253,7 @@
     <!-- ==================================== RESTAURANTE ==================================== -->
 	<section class="section-divider textdivider divider2" id="services">
 		<div class="container">
-			<h1>El restaurante</h1>
+			<h1 id="titleSeparadores">El restaurante</h1>
 			<hr>
 		</div><!-- container -->
 	</section><!-- section -->
@@ -223,7 +262,7 @@
 	<div class="container" name="services">
 		<br>
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
+			<div class="col-lg-offset-2 col-lg-8" style="padding-bottom: 15px;">
 				<p>Gran variedad en cocina típica y pescados de la zona.
                    Todo un placer al alcance de nuestros visitantes.
 				</p>
@@ -269,10 +308,58 @@
 
     <br>
 
+    <!-- ==================================== SERVICIOS ==================================== -->
+    <section class="section-divider textdivider divider1" id="serviciosHotel">
+        <div class="container">
+            <h1 id="titleSeparadores">Servicios</h1>
+            <hr>
+        </div><!-- container -->
+    </section><!-- section -->
+    
+    <div class="container" name="about">
+        <div class="row white">         
+            <div class="col-lg-offset-3 col-lg-6">
+                <p>Todo con un buen servicio y ambiente familiar, donde encontrarán también:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cafetería<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Restaurante<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Prensa y revistas<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Supermercado<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Lavandería<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Se aceptan mascotas (bajo peticion previa)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Parking gratuito propio<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Peluquería propia<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cajero automático<br>
+                </p>
+            </div><!-- col-lg-6 -->
+        </div><!-- row white -->
+
+        <section id="miSliderServicios" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#miSliderServicios" data-slide-to="0" class="active"></li>
+                <li data-target="#miSliderServicios" data-slide-to="1" ></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!--<img class="adaptar" id="foto_habitaciones_1">-->
+                    <img class="adaptar" src="assets/photos/peluqueria1.jpg">
+                </div>
+                <div class="item">
+                    <!--<img class="adaptar" id="foto_habitaciones_2">-->
+                    <img class="adaptar" src="assets/photos/peluqueria2.jpg">
+                </div>
+            </div>
+            <a href="#miSliderServicios" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#miSliderServicios" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </section>  
+    </div><!-- container -->
+
+    <br>
+
    <!-- ==================================== ENTORNO ==================================== -->
 	<section class="section-divider textdivider divider3" id="team">
 		<div class="container">
-			<h1>El entorno</h1>
+			<h1 id="titleSeparadores">El entorno</h1>
 			<hr>
 		</div><!-- container -->
 	</section><!-- section -->
@@ -342,7 +429,7 @@
 	<!-- ==================================== CONTACTO ==================================== -->
 	<section class="section-divider textdivider divider4" id="portfolio">
 		<div class="container">
-			<h1>Contacto</h1>
+			<h1 id="titleSeparadores">Contacto</h1>
 			<hr>
 		</div>
 	</section>
@@ -353,6 +440,7 @@
         <div class="row">
             <!--<div class="col-lg-offset-3 col-lg-7">-->
             <div class="col-lg-offset-3 col-lg-6"> 
+
                 <h3>       
                     <table style="width:100%">
                       <tr>
@@ -386,15 +474,30 @@
             </div>
 
         </div><!-- row -->
+
 	</div>    
 
+    <!-- ==================================== RESERVAS ==================================== -->
+    <section class="section-divider textdivider divider6" id="reservas">
+        <div class="container">
+            <h1 id="titleSeparadores">Reservas</h1>
+        </div><!-- container -->
+    </section><!-- section -->
+
+    <div class="container" name="services">
+        <br>
+        <div class="row" style="text-align:center;width:100%;">
+            <!--<iframe src="https://conilhospeda.com/embed/antonio/" style="border:0px;width:290px;height 280px;" ></iframe>-->
+            <iframe src="https://conilhospeda.com/embed/antonio/" style="border:0px;display:block;" width="100%" height="430px;" align="center"></iframe>
+        </div>
+    </div>
 
     <!-- ==================================== LOCALIZACIÓN ==================================== -->
 	<section class="section-divider textdivider divider5" id="contact">
 		<div class="container">
-			<h1>Localización</h1>
+			<h1 id="titleSeparadores">Localización</h1>
 			<hr>
-			<p>Carretera Cádiz-Málaga Km. 17 <br />
+			<p style="text-align: center; font-family: fontSubtitle !important;">Carretera Cádiz-Málaga Km. 17 <br />
 			11149 Conil ( Cádiz) <br />
 			</p>
 		</div><!-- container -->
@@ -405,7 +508,7 @@
         <div class="row">
             <div class="col-lg-offset-1 col-lg-10">
                 <h2 style="text-align: center;"><b>Cómo llegar</b></h2>
-                <p style="text-align: justify;">Si viaja desde Madrid, Sevilla o Jerez tome la A-4 dirección Algeciras, chiclana, luego incorporesea la A-48/E-5 y tome la salida 15, direccion Conil Norte, llegando a la rotonda de la entrada a la urbanización de Roche enfrente estara su destino.
+                <p style="text-align: justify;">Si viaja desde Madrid, Sevilla o Jerez tome la A-4 dirección Algeciras - Chiclana, luego incorporese a la A-48/E-5 y tome la salida 15, dirección Conil Norte. Una vez llegue a la rotonda de la entrada de la urbanización de Roche, encontrá su destino.
                 </p>
             </div><!-- col-lg -->
         </div><!-- row -->
@@ -418,7 +521,8 @@
     <!-- ==================================== PIE DE PÁGINA ==================================== -->
 	<div id="footerwrap">
 		<div class="container">
-		     <a target="blank" href="http://www.jaimechapinal.com">Webmaster</a>
+            Hotel Antonio Conil
+		     <!--<a target="blank" href="http://www.jaimechapinal.com">Webmaster</a>-->
 			<!--<h4>Created by <a href="http://blacktie.co">BlackTie.co</a> - Copyright 2014</h4>-->
 		</div>
 	</div>
@@ -432,7 +536,6 @@
     <script>
       var map;
       function initialize() {
-        debugger
         var mapOptions = {
           zoom: 17,
           //center: new google.maps.LatLng(-34.397, 150.644),	

@@ -151,8 +151,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
+    margin: 25px;
     font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .centered {
@@ -408,6 +410,10 @@ a:after {
 
 .divider5 {
 	background-image: url('../photos/Separadores/foto_separador_localizacion.jpg')
+}
+
+.divider6 {
+  background-image: url('../photos/Separadores/foto_separador_reservas.jpg')
 }
 
 /* ==========================================================================
@@ -733,13 +739,31 @@ html, body, #map_canvas {
 }
 
 #titleBig {
-  font-family: "fontTitleBig";
+  font-family: fontTitleBig !important;
+  font-size: 130px !important;
+}
+
+#subtitle {
+  font-family: fontSubtitle !important;
+  /*font-size: 100px !important;*/
+  font-size: 45px !important;
+}
+
+#titleSeparadores {
+  font-family: fontSubtitle !important;
+  font-size: 70px !important;
 }
 
 @font-face {
-  font-family: "fontTitleBig";
-  src: url("./assets/fonts/Nirepnirun.ttf") !important;
+  font-family: fontTitleBig;
+  src: url("../fonts/MRFLemonberrySans.otf") format("opentype");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: fontSubtitle;
+  src: url("../fonts/MRFLemonberrySans.otf") format("opentype");
+  font-weight: bolder;
 }
 
 /* ==========================================================================
